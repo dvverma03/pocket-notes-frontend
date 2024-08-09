@@ -4,7 +4,7 @@ import { IoMdArrowRoundBack } from "react-icons/io";
 import { useSelector } from "react-redux";
 import axios from "axios";
 import { FaCircle } from "react-icons/fa";
-import toast, { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from "react-hot-toast";
 
 const ChatScreen = ({ index, onBack }) => {
   const { user } = useSelector((store) => store);
@@ -81,12 +81,15 @@ const ChatScreen = ({ index, onBack }) => {
         <div onClick={handleCloseButton} className="md:hidden block pl-1">
           <IoMdArrowRoundBack size={30} color="white" />
         </div>
-        <div style={{backgroundColor:user?.groupColor}} className="flex items-center w-[50px] h-[50px] rounded-full md:ml-4 justify-center">
-          <p className="text-white text-[25px] text-center">
+        <div
+          style={{ backgroundColor: user?.groupColor }}
+          className="flex items-center w-[50px] h-[50px] rounded-full md:ml-4 justify-center"
+        >
+          <p className="text-white text-[25px] font-roboto text-center">
             {user?.groupIcon}
           </p>
         </div>
-        <p className="text-white text-[25px] pl-2 text-center">
+        <p className="text-white text-[25px] font-roboto pl-2 text-center">
           {user?.groupName}
         </p>
       </div>
@@ -99,13 +102,13 @@ const ChatScreen = ({ index, onBack }) => {
               key={i}
               className="bg-white font-roboto font-medium my-4 shadow-2xl shadow-gray-400 p-4 text-[16px] rounded-[5px] mx-4"
             >
-              <div className="font-medium">{e?.text}</div>
+              <div className="font-medium font-roboto">{e?.text}</div>
               <div className="flex pt-2 justify-end">
-                <div className="font-semibold pr-2">
+                <div className="font-semibold font-roboto pr-2">
                   {formatDate(e?.createdAt)}
                 </div>
                 <FaCircle className="mt-2" size={8} />
-                <div className="font-semibold pl-2">
+                <div className="font-semibold font-roboto pl-2">
                   {formatTime(e?.createdAt)}
                 </div>
               </div>

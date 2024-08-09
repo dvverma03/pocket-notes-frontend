@@ -31,7 +31,7 @@ function App() {
           isChat ? "hidden md:block" : ""
         }`} // Hide Sidebar on small screens when Chat is open
       >
-        <div className="text-3xl font-medium text-center pt-[3vh] pb-[3vh]">
+        <div className="text-3xl font-medium font-roboto text-center pt-[3vh] pb-[3vh]">
           Pocket Notes
         </div>
         <div

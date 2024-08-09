@@ -69,7 +69,7 @@ const NewChatRegistration = ({ handleClose }) => {
                 value={groupName}
                 onChange={handleChange}
                 ref={groupRef}
-                className="w-full h-full rounded-[15px] pl-2 focus:outline-none border-2 border-gray-300"
+                className="w-full h-full rounded-[15px] font-roboto pl-2 focus:outline-none border-2 border-gray-300"
                 type="text"
                 placeholder="Enter group name"
               />
@@ -130,7 +130,7 @@ const NewChatRegistration = ({ handleClose }) => {
             onClick={createGroup}
             className="flex float-right pt-2 md:pb-4 cursor-pointer"
           >
-            <div className="bg-[#001F8B] text-white py-[4px] px-10 rounded-[8px]">
+            <div className="bg-[#001F8B] text-white font-roboto py-[4px] px-10 rounded-[8px]">
               Create
             </div>
           </div>
