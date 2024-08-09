@@ -22,7 +22,8 @@ const NewChatRegistration = ({ handleClose }) => {
   
     try {
       const fetchData = await axios.post(
-        "http://localhost:8000/api/v1/group/create",
+        `https://pocket-notes-backend-zeta.vercel.app/api/v1/group/create`,
+        // "http://localhost:8000/api/v1/group/create",
         { groupName: groupName, groupIcon: Icon, groupColor: color }
       );
       if (fetchData) {

@@ -17,7 +17,8 @@ const ChatScreen = ({ index, onBack }) => {
     const fetchChats = async () => {
       console.log("user id",user?._id)
       const fetchData = await axios.post(
-        "http://localhost:8000/api/v1/message",
+        `https://pocket-notes-backend-zeta.vercel.app/api/v1/message`,
+        // "http://localhost:8000/api/v1/message",
         { user_id: user?._id }
       );
       setData(fetchData?.data?.data?.data);
@@ -32,7 +33,8 @@ const ChatScreen = ({ index, onBack }) => {
   const handleSend = async () => {
     try {
       const fetchData = await axios.post(
-        "http://localhost:8000/api/v1/message/send",
+        `https://pocket-notes-backend-zeta.vercel.app/api/v1/message/send`,
+        // "http://localhost:8000/api/v1/message/send",
         { group_id: user?._id, message: message }
       );
 

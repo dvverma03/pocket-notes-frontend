@@ -11,7 +11,8 @@ const Sidebar = ({screenHandle,setUserIndex,handleNewGroup}) => {
 
   useEffect(()=>{
     const fetchChats=async()=>{
-      const fetchData=await axios.get("http://localhost:8000/api/v1/group")
+      const fetchData=await axios.get(`https://pocket-notes-backend-zeta.vercel.app/api/v1/group`)
+      // const fetchData=await axios.get("http://localhost:8000/api/v1/group")
       setData(fetchData?.data?.data?.data)
     }
     fetchChats()
