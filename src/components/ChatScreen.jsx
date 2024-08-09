@@ -15,7 +15,6 @@ const ChatScreen = ({ index, onBack }) => {
 
   useEffect(() => {
     const fetchChats = async () => {
-      console.log("user id",user?._id)
       const fetchData = await axios.post(
         `https://pocket-notes-backend-zeta.vercel.app/api/v1/message`,
         // "http://localhost:8000/api/v1/message",

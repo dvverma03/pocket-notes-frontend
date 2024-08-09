@@ -27,7 +27,6 @@ const NewChatRegistration = ({ handleClose }) => {
         { groupName: groupName, groupIcon: Icon, groupColor: color }
       );
       if (fetchData) {
-        console.log("Fetch data successful:", fetchData); // Debugging line
         toast.success("New group created successfully.");
         setTimeout(() => handleClose(), 1000); // Delay handleClose to ensure toast shows up
       }
