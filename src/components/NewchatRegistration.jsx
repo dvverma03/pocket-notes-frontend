@@ -80,16 +80,50 @@ const NewChatRegistration = ({ handleClose }) => {
               Choose color
             </div>
             <div className="flex space-x-2 pl-2">
-              {/* Color Picker */}
-              {["#B38BFA", "#FF79F2", "#43E6FC", "#F19576", "#0047FF", "#6691FF"].map(c => (
+              
                 <p
-                  key={c}
-                  onClick={() => setColor(c)}
-                  className={`md:w-[30px] w-[20px] h-[20px] md:h-[30px] cursor-pointer rounded-full bg-[${c}] ${
-                    color === c ? "border-2 border-black" : "border-0"
+                  key={"#B38BFA"}
+                  onClick={() => setColor("#B38BFA")}
+                  className={`md:w-[30px] w-[20px] h-[20px] md:h-[30px] cursor-pointer rounded-full bg-[#B38BFA] ${
+                    color === "#B38BFA" ? "border-2 border-black" : "border-0"
                   }`}
                 ></p>
-              ))}
+                <p
+                  key={"#FF79F2"}
+                  onClick={() => setColor("#FF79F2")}
+                  className={`md:w-[30px] w-[20px] h-[20px] md:h-[30px] cursor-pointer rounded-full bg-[#FF79F2] ${
+                    color === "#FF79F2" ? "border-2 border-black" : "border-0"
+                  }`}
+                ></p>
+                <p
+                  key={"#43E6FC"}
+                  onClick={() => setColor("#43E6FC")}
+                  className={`md:w-[30px] w-[20px] h-[20px] md:h-[30px] cursor-pointer rounded-full bg-[#43E6FC] ${
+                    color === "#43E6FC" ? "border-2 border-black" : "border-0"
+                  }`}
+                ></p>
+                <p
+                  key={"#F19576"}
+                  onClick={() => setColor("#F19576")}
+                  className={`md:w-[30px] w-[20px] h-[20px] md:h-[30px] cursor-pointer rounded-full bg-[#F19576] ${
+                    color === "#F19576" ? "border-2 border-black" : "border-0"
+                  }`}
+                ></p>
+                <p
+                  key={"#0047FF"}
+                  onClick={() => setColor("#0047FF")}
+                  className={`md:w-[30px] w-[20px] h-[20px] md:h-[30px] cursor-pointer rounded-full bg-[#0047FF] ${
+                    color === "#0047FF" ? "border-2 border-black" : "border-0"
+                  }`}
+                ></p>
+                <p
+                  key={"#6691FF"}
+                  onClick={() => setColor("#6691FF")}
+                  className={`md:w-[30px] w-[20px] h-[20px] md:h-[30px] cursor-pointer rounded-full bg-[#6691FF] ${
+                    color === "#6691FF" ? "border-2 border-black" : "border-0"
+                  }`}
+                ></p>
+                
             </div>
           </div>
           <div
